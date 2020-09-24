@@ -1,0 +1,29 @@
+.footer {
+  background-color: green;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 768px) {
+  .aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer-copyright {
+    align-items: initial;
+    position: relative;
+    bottom: 65px;
+  }
+}
