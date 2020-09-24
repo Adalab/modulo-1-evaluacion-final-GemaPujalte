@@ -1,3 +1,54 @@
 .header {
-  background-color: grey;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__button--menu {
+    width: 44px;
+    height: 44px;
+    background-color: #0271bc;
+    border: none;
+    position: fixed;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+  }
+
+  &__content--text {
+    width: 290px;
+    height: 110px;
+    font-size: 42px;
+    text-align: center;
+    line-height: 1.31;
+    color: $white;
+    font-family: $font-main;
+    text-transform: uppercase;
+    padding: 0 15px;
+  }
+
+  &__content--pp {
+    width: 290px;
+    height: 21px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-family: $font-main;
+    color: $white;
+    padding: 10px 15px 0 15px;
+    margin-bottom: 45px;
+  }
+
+  &__button--scroll {
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: none;
+    margin-bottom: 53px;
+  }
 }
