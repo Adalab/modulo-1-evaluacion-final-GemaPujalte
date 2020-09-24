@@ -30,9 +30,15 @@
     font-family: $font-main;
     text-transform: uppercase;
     padding: 0 15px;
+
+    @media all and (min-width: 768px) {
+      width: 690px;
+      height: 212px;
+      font-size: 80px;
+    }
   }
 
-  &__content--pp {
+  &__content--p {
     width: 290px;
     height: 21px;
     text-align: center;
@@ -42,6 +48,13 @@
     color: $white;
     padding: 10px 15px 0 15px;
     margin-bottom: 45px;
+
+    @media all and (min-width: 768px) {
+      margin-bottom: 15px;
+      width: 360px;
+      height: 32px;
+      font-size: 21px;
+    }
   }
 
   &__button--scroll {
@@ -50,5 +63,10 @@
     border-radius: 22.5px;
     border: none;
     margin-bottom: 53px;
+
+    @media all and (min-width: 768px) {
+      margin-bottom: 45px;
+      margin-top: 15px;
+    }
   }
 }
