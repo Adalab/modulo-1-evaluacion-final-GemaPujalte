@@ -7,7 +7,7 @@
   &__button--menu {
     width: 44px;
     height: 44px;
-    background-color: #0271bc;
+    background-color: $bluesky;
     border: none;
     position: fixed;
   }
@@ -35,6 +35,12 @@
       width: 690px;
       height: 212px;
       font-size: 80px;
+
+      @media all and (min-width: 1200px) {
+        width: 730px;
+        height: 264px;
+        font-size: 100px;
+      }
     }
   }
 
@@ -44,7 +50,7 @@
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
-    font-family: $font-main;
+    font-family: $font-header;
     color: $white;
     padding: 10px 15px 0 15px;
     margin-bottom: 45px;
@@ -54,6 +60,10 @@
       width: 360px;
       height: 32px;
       font-size: 21px;
+
+      @media all and (min-width: 1200px) {
+        font-size: 24px;
+      }
     }
   }
 
@@ -67,6 +77,10 @@
     @media all and (min-width: 768px) {
       margin-bottom: 45px;
       margin-top: 15px;
+
+      @media all and (min-width: 1200px) {
+        margin-bottom: 13px;
+      }
     }
   }
 }
