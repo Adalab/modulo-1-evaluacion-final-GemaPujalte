@@ -4,29 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
-    <div class="page">
-      <include src="./partials/header.html" title="Bienvenidos a Adalab"></include>
-      <include src="./partials/main.html"></include>
-      <include
-        src="./partials/link.html"
-        aClass="link__adalab"
-        text="Adalab"
-        url="https://adalab.es"
-      ></include>
-      <include
-        src="./partials/link.html"
-        aClass="link__github"
-        text="GitHub"
-        url="https://github.com"
-      ></include>
-      <include src="./partials/footer.html"></include>
-    </div>
-    <script src="./assets/js/main.js"></script>
+    <header>
+      <button>
+        <a href="https://adalab.es/" target="_blank">
+          <img src="./assets/images/ico-menu.svg" alt="Icono menu" />
+        </a>
+      </button>
+      <h1>Anonymous proxy</h1>
+      <p>hac habitasse platea dictumst.</p>
+      <button>
+        <a href="#">
+          <!--debe enlazar a la sección "3 Reasons To Purchase"-->
+          <img
+            src="./assets/images/ico-scroll-down.svg"
+            alt="Boton direccion hacia abajo"
+        /></a>
+      </button>
+    </header>
+
+    <main>
+      <section>
+        <p>Insomnia tips</p>
+        <h2>Looking through a window</h2>
+        <p>
+          Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis,
+          at luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+        </p>
+        <button>Go</button>
+      </section>
+
+      <section>
+        <h2>3 reason to purchase</h2>
+        <article>
+          <h3>Ut sed metus</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <h3>Curabitur ac erat</h3>
+          <p>Mauris mattis urna quis lorem molestie.</p>
+          <h3>Morbi dictums</h3>
+          <p>Aliquam in dolor et dolor tincidunt.</p>
+        </article>
+      </section>
+      <button>More reasons</button>
+    </main>
+
+    <footer>
+
+    <button>
+
+    <a href="#"
+      ><img src="./assets/images/ico-arrow.svg" alt="Boton flecha hacia arriba"
+    /></a>
+  </button>
+    <!--debe enlazar al inicio de la página.-->
+     <small> &copy2017</small> 
+     <small> we &#129505 components</small>
+
+     <aside>
+     <nav>
+       <ul>
+         <li><a href="https://adalab.es/" target="_blank">Articles</a></li>
+         <li><a href="https://adalab.es/" target="_blank">Books</a></li>
+         <li><a href="https://adalab.es/" target="_blank">Events</a></li>
+         <li><a href="https://adalab.es/" target="_blank">Reasons</a></li>
+         <li><a href="https://adalab.es/" target="_blank">Tips</a></li>
+       </ul>
+     </nav>
+
+     <nav>
+       <ul>
+         <li><a href="https://adalab.es/" target="_blank">Twitter</a></li>
+         <li><a href="https://adalab.es/" target="_blank">Instagram</a></li>
+         <li><a href="https://adalab.es/" target="_blank">Mastodon.social</a></li>
+         
+       </ul>
+     </nav>
+    </aside>
+  </footer>
+
   </body>
 </html>
