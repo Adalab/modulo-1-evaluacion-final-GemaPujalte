@@ -1,6 +1,4 @@
 .main {
-  background-color: blue;
-
   &__insomnia {
     background-color: $white;
     height: 376px;
@@ -107,4 +105,80 @@
     background-color: $lightblue;
     transition: background-color ease 1s;
   }
+
+  &__reason {
+    background-color: $ice-blue;
+    height: 624px;
+
+    @media all and (min-width: 768px) {
+      height: 397px;
+    }
+  }
+
+  &__reason--title {
+    font-family: $font-main2;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 15px 45px;
+  }
+
+  &__wrapper--grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 90px 90px 90px;
+    gap: 45px;
+    margin: 0 70px;
+
+    @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 98px 98px;
+      gap: 14px;
+      margin: 0 38px;
+    }
+  }
+
+  &__title--grid {
+    text-align: center;
+    font-family: $font-main2;
+    line-height: 30px;
+  }
+  &__text--grid {
+    text-align: center;
+    font-family: $font-header;
+    line-height: 30px;
+  }
+  &__button--reason {
+    width: 184px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: none;
+    background-color: $bright-orange;
+    color: #ffffff;
+    font-family: $font-header;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__button--reason:hover {
+    background-color: #ffffff;
+    color: $bright-orange;
+    transition: background-color ease 1s, color ease 1s;
+  }
+
+  @media all and (min-width: 768px) {
+    &__button--reason {
+      width: 210px;
+    }
+    &__container--button {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      margin: auto;
+    }
+  }
 }
+
+//MAIN REASON
