@@ -1,6 +1,110 @@
 .main {
   background-color: blue;
-}
-.main-insomnia {
-  background-color: red;
+
+  &__insomnia {
+    background-color: $white;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media all and (min-width: 768px) {
+      height: 330px;
+    }
+
+    @media all and (min-width: 1200px) {
+      height: 360px;
+    }
+  }
+
+  &__tips {
+    height: 30px;
+    font-family: $font-header;
+    font-size: 14px;
+    color: #8ccbea;
+    text-transform: capitalize;
+    margin-left: 15px;
+    margin-bottom: 0;
+
+    @media all and (min-width: 768px) {
+      margin-left: 39px;
+      line-height: 30px;
+    }
+
+    @media all and (min-width: 1200px) {
+      margin-left: 275px;
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    height: 60px;
+    font-family: $font-main2;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: $black;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+    @media all and (min-width: 768px) {
+      height: 45px;
+      line-height: 45px;
+      font-size: 26px;
+      margin-left: 39px;
+    }
+
+    @media all and (min-width: 1200px) {
+      margin-left: 275px;
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    height: 120px;
+    font-family: $font-header;
+    font-size: 18px;
+    line-height: 30px;
+    color: $greyish-brown;
+    margin-left: 15px;
+    margin-bottom: 30px;
+
+    @media all and (min-width: 768px) {
+      height: 60px;
+      margin-left: 39px;
+      font-size: 20px;
+    }
+
+    @media all and (min-width: 1200px) {
+      margin-left: 275px;
+      margin-right: 179px;
+    }
+  }
+
+  &__button {
+    width: 76px;
+    height: 45px;
+    border-radius: 22.5px;
+    color: #f26002;
+    border: solid 2px #f26002;
+    margin-left: 15px;
+    background-color: $white;
+    font-size: 20px;
+    font-weight: 500;
+
+    @media all and (min-width: 768px) {
+      width: 91px;
+      margin-left: 39px;
+    }
+
+    @media all and (min-width: 1200px) {
+      margin-left: 275px;
+      width: 160px;
+    }
+  }
+
+  &__button:hover {
+    background-color: $lightblue;
+    transition: background-color ease 1s;
+  }
 }
