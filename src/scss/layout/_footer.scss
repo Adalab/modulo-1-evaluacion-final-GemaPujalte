@@ -1,29 +1,100 @@
 .footer {
-  background-color: green;
-}
-
-.aside {
+  background-color: $dark-grey-blue;
+  height: 465px;
+  font-family: $font-header;
+  position: relative;
   display: flex;
   flex-direction: column;
-}
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-.footer-copyright {
-  display: flex;
-  flex-direction: column;
-}
-
-@media all and (min-width: 768px) {
-  .aside {
-    display: flex;
+  @media all and (min-width: 768px) {
+    height: 240px;
     flex-direction: row;
-    justify-content: flex-end;
+    padding-top: 45px;
+    height: 240px;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
   }
-}
+  @media all and (min-width: 1200px) {
+    justify-content: space-evenly;
+  }
 
-@media all and (min-width: 768px) {
-  .footer-copyright {
-    align-items: initial;
-    position: relative;
-    bottom: 65px;
+  &__button--up {
+    transform: translate(0, -50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-name: colors;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+
+    @keyframes colors {
+      0% {
+        background-color: palegoldenrod;
+      }
+      25% {
+        background-color: palegreen;
+      }
+      50% {
+        background-color: paleturquoise;
+      }
+      100% {
+        background-color: palevioletred;
+      }
+    }
+  }
+
+  &__menu {
+    list-style: none;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding: 0;
+  }
+
+  &__nav {
+    margin-bottom: 30px;
+  }
+
+  &__links {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &-copyright {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  @media all and (min-width: 768px) {
+    .aside-1 {
+      order: 2;
+    }
+    .aside-2 {
+      order: 3;
+    }
+  }
+
+  @media all and (min-width: 768px) {
+    &-copyright {
+      order: 1;
+      text-align: left;
+    }
   }
 }
