@@ -20,7 +20,7 @@
     height: 30px;
     font-family: $font-header;
     font-size: 14px;
-    color: #8ccbea;
+    color: $lightblue;
     text-transform: capitalize;
     margin-left: 15px;
     margin-bottom: 0;
@@ -83,8 +83,8 @@
     width: 76px;
     height: 45px;
     border-radius: 22.5px;
-    color: #f26002;
-    border: solid 2px #f26002;
+    color: $bright-orange;
+    border: solid 2px $bright-orange;
     margin-left: 15px;
     background-color: $white;
     font-size: 20px;
@@ -106,12 +106,18 @@
     transition: background-color ease 1s;
   }
 
+  //MAIN REASON
+
   &__reason {
     background-color: $ice-blue;
     height: 624px;
 
     @media all and (min-width: 768px) {
       height: 397px;
+    }
+
+    @media all and (min-width: 1200px) {
+      height: 427px;
     }
   }
 
@@ -122,6 +128,15 @@
     font-weight: bold;
     text-align: center;
     padding: 30px 15px 45px;
+
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 45px;
+    }
+
+    @media all and (min-width: 1200px) {
+      font-size: 32px;
+    }
   }
 
   &__wrapper--grid {
@@ -144,11 +159,31 @@
     text-align: center;
     font-family: $font-main2;
     line-height: 30px;
+
+    @media all and (min-width: 768px) {
+      height: 30px;
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+  }
+  &__container--button {
+    @media all and (min-width: 768px) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      margin: auto;
+    }
   }
   &__text--grid {
     text-align: center;
     font-family: $font-header;
     line-height: 30px;
+    font-size: 18px;
+    height: 63px;
+
+    @media all and (min-width: 768px) {
+      height: 68px;
+      font-size: 20px;
+    }
   }
   &__button--reason {
     width: 184px;
@@ -156,7 +191,7 @@
     border-radius: 22.5px;
     border: none;
     background-color: $bright-orange;
-    color: #ffffff;
+    color: $white;
     font-family: $font-header;
     font-size: 20px;
     margin: 0 auto;
@@ -164,21 +199,8 @@
   }
 
   &__button--reason:hover {
-    background-color: #ffffff;
+    background-color: $white;
     color: $bright-orange;
     transition: background-color ease 1s, color ease 1s;
   }
-
-  @media all and (min-width: 768px) {
-    &__button--reason {
-      width: 210px;
-    }
-    &__container--button {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      margin: auto;
-    }
-  }
 }
-
-//MAIN REASON
