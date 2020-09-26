@@ -3,43 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Evaluación Módulo 1</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Slab"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header class="header">
+      <button class="header__button--menu">
+        <a href="https://adalab.es/" target="_blank">
+          <img src="./assets/images/ico-menu.svg" alt="Icono menu" />
+        </a>
+      </button>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-      </main>
+      <div class="header__content">
+        <h1 class="header__content--text">Anonymous proxy</h1>
+        <p class="header__content--p">In hac habitasse platea dictumst.</p>
+        <button class="header__button--scroll">
+          <a href="#reason">
+            <!--debe enlazar a la sección "3 Reasons To Purchase"-->
+            <img
+              src="./assets/images/ico-scroll-down.svg"
+              alt="Boton direccion hacia abajo"
+          /></a>
+        </button>
+      </div>
+    </header>
 
-      <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
+    <main class="main">
+      <section class="main__insomnia">
+        <p class="main__tips">Insomnia tips</p>
+        <h2 class="main__title">Looking through a window</h2>
+        <p class="main__text">
+          Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+          luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+        </p>
+        <button class="main__button">Go</button>
+      </section>
 
-      <a class="link__github" href="https://github.com" target="_blank">GitHub</a>
+      <section class="main__reason" id="reason">
+        <h2 class="main__reason--title">3 reason to purchase</h2>
+        <article class="main__wrapper--grid">
+          <div>
+            <h3 class="main__title--grid">Ut sed metus</h3>
+            <p class="main__text--grid">Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
+          <div>
+            <h3 class="main__title--grid">Curabitur ac erat</h3>
+            <p class="main__text--grid">Mauris mattis urna quis lorem molestie.</p>
+          </div>
 
-        </small>
-      </footer>
+          <div>
+            <h3 class="main__title--grid">Morbi dictum</h3>
+            <p class="main__text--grid">Aliquam in dolor et dolor tincidunt.</p>
+          </div>
+          <div class="main__container--button">
+            <button class="main__button--reason">More reasons</button>
+          </div>
+        </article>
+      </section>
+    </main>
 
+    
+     <footer class="footer">
+
+      <button class="footer__button--up">
+
+      <a href="#"
+        ><img src="./assets/images/ico-arrow.svg" alt="Boton flecha hacia arriba"
+      /></a>
+    </button>
+      
+       <aside class="footer__aside aside-1">
+        <nav class="footer__nav">
+          <ul class="footer__menu">
+            <li><a class="footer__links" href="https://adalab.es/" target="_blank">Articles</a></li>
+            <li><a class="footer__links" href="https://adalab.es/" target="_blank">Books</a></li>
+            <li><a class="footer__links" href="https://adalab.es/" target="_blank">Events</a></li>
+            <li><a class="footer__links" href="https://adalab.es/" target="_blank">Reasons</a></li>
+            <li><a class="footer__links" href="https://adalab.es/" target="_blank">Tips</a></li>
+          </ul>
+        </nav>
+       </aside>
+
+
+
+       <aside class="footer__aside aside-2">
+        <nav class="footer__nav">
+          <ul class="footer__menu">
+            <li><a class="footer__links" href="https://adalab.es/" target="_blank">Twitter</a></li>
+            <li><a class="footer__links" href="https://adalab.es/" target="_blank">Instagram</a></li>
+            <li><a class="footer__links" href="https://adalab.es/" target="_blank">Mastodon.social</a></li>
+            
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="footer-copyright">
+      <small> &copy2017</small> 
+      <small> we &#129505 components</small>
     </div>
-    <script src="./assets/js/main.js"></script>
+    </footer>
   </body>
 </html>
