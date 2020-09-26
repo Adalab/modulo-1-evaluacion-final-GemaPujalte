@@ -4,7 +4,6 @@
     height: 376px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
 
     @media all and (min-width: 768px) {
@@ -17,7 +16,6 @@
   }
 
   &__tips {
-    height: 30px;
     font-family: $font-header;
     font-size: 14px;
     color: $lightblue;
@@ -75,7 +73,6 @@
 
     @media all and (min-width: 1200px) {
       margin-left: 275px;
-      margin-right: 179px;
     }
   }
 
@@ -88,7 +85,6 @@
     margin-left: 15px;
     background-color: $white;
     font-size: 20px;
-    font-weight: 500;
 
     @media all and (min-width: 768px) {
       width: 91px;
@@ -125,7 +121,6 @@
     font-family: $font-main2;
     font-size: 24px;
     text-transform: capitalize;
-    font-weight: bold;
     text-align: center;
     padding: 30px 15px 45px;
 
@@ -147,7 +142,6 @@
     margin: 0 70px;
 
     @media all and (min-width: 768px) {
-      display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 98px 98px;
       gap: 14px;
@@ -161,7 +155,6 @@
     line-height: 30px;
 
     @media all and (min-width: 768px) {
-      height: 30px;
       font-size: 24px;
       margin-bottom: 14px;
     }
@@ -178,10 +171,8 @@
     font-family: $font-header;
     line-height: 30px;
     font-size: 18px;
-    height: 63px;
 
     @media all and (min-width: 768px) {
-      height: 68px;
       font-size: 20px;
     }
   }
@@ -192,7 +183,6 @@
     border: none;
     background-color: $bright-orange;
     color: $white;
-    font-family: $font-header;
     font-size: 20px;
     margin: 0 auto;
     display: block;
