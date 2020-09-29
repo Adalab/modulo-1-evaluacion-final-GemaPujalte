@@ -1,5 +1,5 @@
 .footer {
-  background-color: $dark-grey-blue;
+  background-color: $bluesky;
   height: 465px;
   font-family: $font-header;
   position: relative;
@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  color: $black;
 
   @media all and (min-width: 768px) {
     height: 240px;
@@ -68,18 +69,18 @@
   }
 
   &__nav {
-    margin-bottom: 30px;
+    padding-bottom: 45px;
   }
 
   &__links {
-    color: $white;
+    color: $black;
     text-decoration: none;
   }
 
   &-copyright {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: $black;
     font-size: 14px;
     line-height: 30px;
   }
